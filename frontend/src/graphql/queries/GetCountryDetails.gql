@@ -1,4 +1,4 @@
-query Country($code: String!) {
+query getCountryDetails($code: String!) {
   country(code: $code) {
     code
     continent {

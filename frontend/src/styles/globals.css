@@ -38,3 +38,86 @@ body {
   margin: 0;
   font-weight: bold;
 }
+
+.country-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.country-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.country-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.country-emoji {
+  font-size: 24px;
+}
+
+.country-name {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: auto;
+}
+
+.country-code {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Container for all country cards */
+.countries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Style for the add country form */
+.add-country-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.add-country-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.add-country-form button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff4081;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-country-form button:hover {
+  background-color: #ff1c70;
+}
